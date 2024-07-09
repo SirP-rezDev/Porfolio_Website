@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROJECT: PORTFOLIO WEBSITE</title>
+        <style>
+            .navy {
+                height: 120px;
+                width: auto;
+                background-color: gold;
+                margin-bottom: 10px;
+                box-shadow: 0px 10px 40px black;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: maroon;
+            }
+
+            nav {
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 20px;
+                font-size: 35px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            a {
+                color: whitesmoke;
+                text-shadow: 0px 10px 10px gray;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+            }
+            a:hover {
+                color: maroon;
+                text-shadow: 0px 14px 6px whitesmoke;
+                
+            }
+            .body {
+                height: 200px;
+                width: 180vh;
+                background-color: darkgoldenrod;
+                margin: 0 auto;
+                box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+            table {
+                margin: 0 auto;
+                padding: 30px;
+            }
+            h3 {
+                display: inline-block;
+                font-size: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-right: 10px;
+            }
+
+            input {
+                width: 300px;
+                height: 30px;
+                text-indent: 10px;
+                border-radius: 10px;
+                border: 0;
+                margin-top: 10px;
+                display: inline-block;
+                margin-right: 10px;
+                box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease-in-out;
+                color: maroon;
+            }
+            input:hover {
+                width: 350px;
+                height: 40px;
+                font-size: 20px;
+                box-shadow: 0px 8px 6px gray;
+            }
+            button {
+                padding: 5px;
+                background-color: maroon;
+                color: aliceblue;
+                width: 80px;
+                border:  0;
+                border-radius: 15px;
+                font-size: 15px;
+                box-shadow: 0px 12px 6px gray;
+                transition: all 0.3s ease-in-out;
+            }
+            button:hover {
+                background-color: whitesmoke;
+                color: black;
+                box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+            }
+            .home, .skill , .contact{
+                height: 400px;
+                width: 190vh;
+                background-color: red;
+                margin-top: 10px;
+                margin: 0 auto;
+                text-indent: 10px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+            .home:hover {
+                height: 500px;
+            }
+            .project, .about{
+                height: 700px;
+                width: 190vh;
+                background-color: gold;
+                margin-top: 10px;
+                margin: 0 auto;
+                text-indent: 10px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+            .project:hover {
+                height: 750px;
+            }
+            .boddy {
+                margin: 10px;
+            }
+            #mypic {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                margin-left: 10%;
+                box-shadow: 0px 10px 8px black;
+                transition: all 0.3s ease;
+            }
+            #mypic:hover {
+                height: 400px;
+                width: 400px;
+                border-radius: 50%;
+            }
+            #iddiv {
+                display: inline-block;
+                width: 400px;
+                margin-top: 10px;
+                padding-left: 20px;
+                font-size: 20px;
+            }
+            #para {
+                color: whitesmoke;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;
+            }
+            #aa {
+                color: gold;
+            }
+            #mylogo {
+                height: 100px;
+                width: 160px;
+            }
+            #forlogo {
+                display: inline-block;
+            }
+            #navis {
+                display: inline-block;
+                margin-left: 30%;
+                padding: 10px;
+            }
+            #calcus {
+                height: 100px;
+                width: 140px;
+                padding-left: 20px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+            #calcus:hover {
+                height: 200px;
+                width: 240px;
+                border-radius: 10px;
+            }
+            #proj_a {
+                display: inline-block;
+            }
+            #proj_b {
+                display: inline-block;               
+            }
+            #abtpara {
+                height: 200px;
+                width: 200px;
+                background-color: blue;
+                display: inline-block;
+            }
+            #mypic {
+                background-color: red;
+                display: inline-block;
+            }
+            #mypics {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                margin-left: 10px;
+                transition: all 0.3s ease;
+            }
+            #mypics:hover {
+                border-radius: 20px;
+            }
+            #parag {
+                height: 100px;
+                width: 500px;
+                display: inline-block;
+                padding-left: 180px;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                transition: all 0.3s ease;
+            }
+            #parag:hover {
+                color: whitesmoke;
+                font-size: 18px;
+            }
+            th {
+                color: gold;
+            }
+            #gm  {
+                height: 100px;
+                width: 120px;
+            }
+            #fb {
+                height: 200px;
+                width: 200px;
+                margin-left: -50px;
+            }
+            #copy {
+                text-align: center;
+                color: whitesmoke;
+            }
+            #parasrc {
+                color: black;
+            }
+            #fbname {
+                margin-left: 20px;
+            }
+            #homess {
+                color: gold;
+            }
+
+            #homesss {
+                color: maroon;
+            }
+
+            #proj_c {
+                display: block;
+            }
+            #proj_d {
+                display: inline-block;
+            }
+            #pros {
+                text-align: center;
+            }
+            @media (max-width: 1200px) {
+                nav {
+                    text-align: right;
+                }
+                #navis {
+                    margin-left: 10px;
+                }
+                a {
+                    font-size: 16px;
+                    text-align: right;
+                }
+                #mylogo {
+                    height: 80px;
+                    width: 80px;
+                }
+                .navy {
+                    height: 100px;
+                }
+                #parasrc {
+                    font-size: 18px;
+                }
+                #ss {
+                    width: 180px;
+                    font-size: 15px;
+                }
+                .body {
+                    height: 160px;
+                }
+                #mypic {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                }
+                #aa {
+                    font-size: 16px;
+                }
+                #para {
+                    font-size: 15px;
+                }
+                #mypicA {
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                .navy {
+                    text-align: center;
+                    padding: 10px;
+                }
+                .body, .home, .skill, .project, .about, .contact {
+                    width: 90%;
+                    height: 100%;
+                }
+                #parag {
+                    font-size: 14px;
+                }
+                #mypic, #mypics {
+                    width: 60%;
+                    height: 60%;
+                    margin: 0 auto;
+                    transition: all 0.3s ease;
+                }
+                #mypic, #mypics {
+                    width: 40%;
+                    height: 40%;
+                }
+                #calcus, #parag {
+                    width: 100%;
+                    padding: 0;
+                }
+                table {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+    
+            @media (max-width: 480px) {
+                nav {
+                    font-size: 20px;
+                }
+                .body, .home, .skill, .project, .about, .contact {
+                    width: 95%;
+                }
+                input {
+                    width: 90%;
+                }
+                button {
+                    width: auto;
+                    margin-top: 10px;
+                }
+                #iddiv, #parag {
+                    width: 100%;
+                    padding-left: 0;
+                }
+                h3, th {
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navy">
+            <div id="forlogo"><img id="mylogo" src="logo.png" alt="C:\Users\PC Admin\Downloads\newdamnload\WebbyResume\NewProject"></div>
+            <div id="navis">
+                <nav>
+                    <a href="#homes">HOME</a>
+                    <a href="#projects">PROJECT</a>
+                    <a href="#skill">SKILL</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#contact">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+        <div class="body">
+            <table>
+                <tr>
+                    <th>
+                        <h3 id="parasrc">Search</h3>
+                        <input id="ss" type="text" placeholder="Search Anything here.....">
+                        <button onclick="seearch()">Find</button>
+                        <i>
+                            <p id="parasrc">When using the search bar on the website, be specific with your keywords to find exactly what you need.....</p>
+                        </i>
+                        <script>
+                            function seearch () {
+                                alert("Found!")
+                                document.getElementById('ss').value = '';
+                            }
+                        </script>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="boddy">
+            <div class="home" id="homes">
+                <h1>
+                    <span id="homess">H</span><span>ome</span>
+                </h1>
+                <img id="mypic" class="mypicA" src="me.jpg" alt="C:\Users\PC Admin\Downloads\newdamnload\WebbyResume\NewProject">
+                <div id="iddiv">
+                    <table>
+                        <tr>
+                            <th>
+                                <h2 id="aa">Hi I'm Brian</h2>
+                                <p id="para">"A Developer ready to explore the vast and exciting Jurassic world of programming. Just remember, even the biggest and most formidable beasts of the prehistoric era started small and took their time to grow. Similarly, in the realm of coding, every expert once began with the basics, gradually building their knowledge and skills."</p>
+                                
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="project" id="projects">
+                <h1><span id="homesss">P</span><span>roject</span></h1>
+                <div id="pros">
+                    <div id="proj_b">
+                        <a title="Click me to view this project" href="https://sirp-rezdev.github.io/My_Calcu/" target="_blank"><h3>Web Calculator</h3></a>
+                        <p>"My web calculator, crafted with HTML, CSS, and JavaScript, features a sleek and modern design."</p>
+                    </div>
+                    <div id="proj_d">
+                        <a title="Click me to view this project" href="https://sirp-rezdev.github.io/MyTodoList/" target="_blank"><h3>Web Todo List </h3></a>
+                        <p>My web to-do list helps you manage tasks effortlessly. Add, edit, and delete notes with ease. Stay organized and boost productivity with this simple tool.</p>
+                    </div>
+                    <div>
+                        <a title="Click me to view this project" href="https://sirp-rezdev.github.io/Online_Resume/" target="_blank"><h3>Web Resume</h3></a>
+                        <p>My web resume highlights my personal details, education, expertise, and contact information, offering a clear overview of my qualifications.</p>
+                    </div>
+                    <div>
+                        <a title="Click me to view this project" href="https://sirp-rezdev.github.io/PMS/" target="_blank"><h3>Project Management System</h3></a>
+                        <p>This Python GUI, built with Tkinter, enables users to create, edit, review, and delete projects efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill" id="skill">
+                <h1><span id="homess">S</span><span>kills</span></h1>
+                <table>
+                    <tr>
+                        <th>
+                            <li><h3>Data Analyst</h3></li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li><h3>Graphics Designer</h3></li>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <li><h3>Frontend Developer</h3></li>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="about" id="about">
+                <h1><span id="homesss">A</span><span>bout</span></h1>
+                <div id="parag"><p>Programming is like being a T-Rex trying to type on a tiny keyboard with its short arms. You know what you want to say, but sometimes it feels like you're just mashing keys and hoping for the best. But hey, when you finally get that code right, it's a real Jurassic parkour victory</p></div>
+                <img id="mypics" src="me.jpg" alt="C:\Users\PC Admin\Downloads\newdamnload\WebbyResume\NewProject">
+            </div>
+            <div class="contact" id="contact">
+                <h1><span id="homess">C</span><span>ontact</span></h1>
+                <ul>
+                    <li>
+                        <img id="fb" src="fb.webp" alt="C:\Users\PC Admin\Downloads\newdamnload\WebbyResume\NewProject">
+                        <a id="fbname">Brian Perez</a>
+                    </li>
+                    <li>
+                        <img id="gm" src="gm.png" alt="C:\Users\PC Admin\Downloads\newdamnload\WebbyResume\NewProject">
+                        <a href="mailto:perezbrian091598@gmail.com">perezbrian091598@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            
+    </body>
+    <footer>
+        <p id="copy">&copy;SirP-rezDev Copyright</p>
+    </footer>
+</html>
